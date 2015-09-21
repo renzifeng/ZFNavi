@@ -35,7 +35,7 @@
         _backImageView.contentMode = UIViewContentModeScaleAspectFill;
         
         _headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(frame.size.width*0.5-70/2, 0.27*frame.size.height, 70, 70)];
-        [_headerImageView sd_setImageWithURL:[NSURL URLWithString:headerImageURL]];
+        [_headerImageView sd_setImageWithURL:[NSURL URLWithString:headerImageURL] placeholderImage:[UIImage imageNamed:@"background"]];
         [_headerImageView.layer setMasksToBounds:YES];
         _headerImageView.layer.cornerRadius = _headerImageView.frame.size.width/2.0f;
         _headerImageView.userInteractionEnabled = YES;
